@@ -1,0 +1,151 @@
+.header__wrapper {
+   box-shadow: 0px 3px 6px $shadow;
+  //  position: relative;
+
+   
+   @media (max-width: 900px){
+      padding: 1em 0;
+      width: 100vw;
+   }
+
+   .header__container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header__logo {
+         font-family: 'Raleway';
+         font-weight: 300;
+         font-size: 2em;
+         color: $logoColor;
+         line-height: 37px;
+      }
+      
+      .header__list--wrapper {
+         display: flex;
+         justify-content: space-between;
+         list-style: none;
+         text-transform: uppercase;
+
+         @media (max-width: 900px) {
+               display: none;
+            }
+
+         li {
+            padding: 1.7em 0;
+
+            a {
+               text-decoration: none;
+               letter-spacing: 3.28px;
+               line-height: 15px;
+               font-size: 0.7em;
+               color: $greyColor;
+               margin-left: 3em;
+               padding: 2.3em 1em;
+
+               &:hover {
+                  border-bottom: 4px solid $logoColor;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+// nav {
+
+//    @media (max-width: 900px) {
+//      position: absolute;
+//      left: 0;
+//      right: 0;
+//      top: 35px;
+//      background: #ddd;
+     
+//      height: calc(100vh - 35px);
+     
+//      transform: translate(100%);
+//      transition: all 0.5s ease;
+//    }
+ 
+//    ul {
+//      display: flex;
+//      list-style: none;
+ 
+//      @media (max-width: 900px) {
+//        flex-direction: column;
+//      }
+ 
+//      li {
+//        padding-left: 15px;
+ 
+//        @media (max-width: 900px) {
+//          padding: 50px 20px;
+//          border-bottom: 1px solid #bbb;
+//        }
+//      }
+//    }
+ 
+//  }
+ 
+//  .menu-btn {
+//    display: none;
+//  }
+ 
+//  .menu-icon {
+//    padding: 15px;
+//    border: 1px solid $greyColor;
+//    cursor: pointer;
+//    display: none;
+ 
+//    span {
+//      width: 20px;
+//      height: 2px;
+//      background: #222;
+//      display: block;
+//      position: relative;
+ 
+//      &:after,
+//      &:before {
+//        content: '';
+//        width: 20px;
+//        height: 2px;
+//        background: #222;
+//        position: absolute;
+//      }
+ 
+//      &:after {
+//        top: -5px;
+//      }
+ 
+//      &:before {
+//        top: 5px;
+//      }
+//    }
+ 
+ 
+//    @media (max-width: 900px) {
+//      display: block;
+//    }
+//  }
+ 
+//  .menu-btn:checked ~ .menu-icon span {
+//    background: transparent;
+//  }
+ 
+//  .menu-btn:checked ~ .menu-icon span:after {
+//    transform: rotate(45deg);
+//    top: 0;
+//  }
+ 
+//  .menu-btn:checked ~ .menu-icon span:before {
+//    transform: rotate(-45deg);
+//    top: 0;
+//  }
+ 
+ 
+//  .menu-btn:checked ~ nav {
+//        transform: translate(0);
+//  }
+ 

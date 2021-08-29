@@ -1,0 +1,56 @@
+.btn {
+    color: $whiteColor;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration: none;
+
+    &--big {
+        padding: 1.37em 9.8em;
+        width: 100%;
+        border-radius: 60px;
+        background-color: $logoColor;
+    }
+
+    &--small {
+        border-radius: 1.4em;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 1em 3.5em;
+        position: relative;
+        top: -0.7em;
+
+        @media (max-width: 900px) {
+            right: 17em;
+        }
+        
+    }
+
+    &--left {
+        background-color: $redColor;
+
+    }
+
+    &--center {
+        background-color: $blueColor;
+        top: -1.8em;
+    }
+
+    &--right {
+        background-color: $greenColor;
+    }
+
+    &--form {
+        border: none;
+        border-radius: 2.2em;
+        width: 14em;
+        margin-top: 3em;
+
+        @media (max-width: 900px) {
+            position: relative;
+            top: 1em;
+            right: 0;
+        }
+
+    }
+}
